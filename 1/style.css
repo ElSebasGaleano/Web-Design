@@ -1,0 +1,71 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2980B9;
+}
+
+wrapper{
+    user-select: none;
+
+}
+
+.wrapper .tiempo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .09);
+}
+.wrapper .tiempo span{
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #17202A;
+}
+
+.tiempo span.separador{
+    width: 10px ;
+}
+
+.tiempo span.separador-ms,
+.tiempo span.milisegundo{
+    color: #2980B9;
+}
+
+.wrapper .buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #2980B9;
+    background: white;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .09);
+}
+
+.buttons button.active,
+.buttons button.stopActive
+{
+    pointer-events: none;
+    opacity: .7;
+}
